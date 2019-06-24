@@ -1,0 +1,274 @@
+@charset "UTF-8";
+
+/* Font読み込み */
+@font-face {
+  font-family: "MyFont";
+  font-family: YuGothic, "Yu Gothic", sans-serif;
+  src: url(../font/GoogleFonts/MPLUSRounded1c-Regular.ttf);
+  /* src: url(../font/GoogleFonts/MPLUSRounded1c-Bold.ttf); */
+}
+@font-face {
+  font-family: "thema";
+  src: url(../font/font!!!/HGSSoeiKakupoptai-03.ttf);
+}
+
+/* 定義 */
+:root {
+  --red: #c0392b;
+  --pink: #ee5a24;
+  --orange: #f79f1f;
+  --yellow: #f1c40f;
+  --blue: #1289a7;
+  --purple: #8e44ad;
+  --yellowgreen: #a3cb38;
+  --green: #009432;
+  --grai: #2f3640;
+  --cream: #f2f5f7;
+}
+
+/* スタイル */
+html,
+body {
+  font-family: "MyFont";
+  height: 100%;
+  width: 100%;
+  /* font-size: 25px; */
+  line-height: 1.5em;
+  color: #e6fafc;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+.body {
+  background-color: var(--grai);
+}
+
+#page {
+  height: 100%;
+}
+
+.title {
+  /* font-size: 50px; */
+  display: inline;
+  /* font-size: 10em; */
+}
+
+.title-icon {
+  /* font-size: 50px; */
+  height: 30px;
+  display: inline;
+}
+
+.arrow-down {
+  position: absolute;
+  bottom: 15px;
+  left: 0%;
+  width: 100%;
+}
+.arrow-down img {
+  width: 20px;
+}
+
+.thema {
+  font-family: "thema";
+  color: var(--orange);
+  /* display: inline; */
+  /* font-size: 1.1em; */
+}
+
+.poster {
+  width: 70%;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+.card {
+  margin-bottom: 10px;
+  width: 100%;
+  color: var(--grai);
+}
+
+.card-title {
+  text-shadow: 0.5px 0.5px 0.5px var(--grai);
+  /* text-shadow: 1px 1px 0 var(--cream); */
+}
+
+.card-header {
+  color: var(--grai);
+}
+
+.fes-imag {
+  max-width: 60%;
+  background-color: #eee8aa;
+  margin: 0 auto;
+}
+
+.map {
+  margin-bottom: 5px;
+}
+
+.menu {
+  position: fixed;
+  top: 20px;
+  text-align: right;
+  /* width: 100%;
+  height: 100%; */
+}
+.menu img {
+  width: 40px;
+  height: 40px;
+  margin-top: 7px;
+}
+
+.menu-bar-list {
+  position: fixed;
+  /* text-align: right; */
+  right: 15px;
+  top: 15px;
+  width: 100%;
+}
+
+#menu-bar {
+  width: 100%;
+}
+
+.menu-list-p {
+  width: 100%;
+  text-align: center;
+}
+
+.menu-item {
+  text-align: center;
+  width: 25%;
+  /* width: 150px; */
+}
+
+.icon-label {
+  padding-top: -px;
+  color: var(--grai);
+}
+
+.table-title {
+  margin-top: 15px;
+  color: var(--grai);
+}
+
+.t-body {
+  background-color: var(--orange);
+}
+/* footer */
+.footer {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* MenuBar */
+.menuBarNo {
+  /* display: none; */
+  position: fixed;
+  /* margin-top: 0px; */
+  /* margin-right: 0px; */
+  width: 100%;
+  height: 100%;
+  right: 0px;
+  top: 0px;
+  z-index: -1;
+  opacity: 0.8;
+  /* height: 100%; */
+  background-color: var(--cream);
+}
+
+/* 各ページ */
+.contents {
+  margin-bottom: 15em;
+}
+
+/* top page */
+#top,
+.title {
+  text-align: center;
+  margin-top: 30%;
+}
+
+#top {
+  height: 100%;
+}
+
+/* 色設定 */
+.red {
+  background-color: var(--red);
+}
+.pink {
+  background-color: var(--pink);
+}
+.orange {
+  background-color: var(--orange);
+}
+.yellow {
+  background-color: var(--yellow);
+}
+.blue {
+  background-color: var(--blue);
+}
+.purple {
+  background-color: var(--purple);
+}
+.yellowgreen {
+  background-color: var(--yellowgreen);
+}
+.green {
+  background-color: var(--green);
+}
+.grai {
+  background-color: var(--grai);
+}
+.cream {
+  background-color: var(--cream);
+}
+.b-red {
+  border: solid 5px var(--red);
+}
+.t-red {
+  color: var(--red);
+}
+.t-pink {
+  color: var(--pink);
+}
+.t-orange {
+  color: var(--orange);
+}
+.t-yellow {
+  color: var(--yellow);
+}
+.t-blue {
+  color: var(--blue);
+}
+.t-purple {
+  color: var(--purple);
+}
+.t-yellowgreen {
+  color: var(--yellowgreen);
+}
+.t-green {
+  color: var(--green);
+}
+.t-grai {
+  color: var(--grai);
+}
+.t-grai-w {
+  color: #7f8c8d;
+}
+.t-cream {
+  color: var(--cream);
+}
+
+
+@keyframes rotate-anime {
+  0%  {transform: rotate(0);}
+  100%  {transform: rotate(360deg);}
+}
